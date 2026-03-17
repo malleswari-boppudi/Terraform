@@ -12,3 +12,12 @@ resource "aws_instance" "dev" {
       Name = "Test-instance"
     }  
 }
+
+resource "aws_subnet" "name" {
+  vpc_id = aws_vpc.name.id
+  cidr_block = "10.0.0.0/23"
+  tags = {
+    "Name" = "Subnet1"
+  }
+  
+}
