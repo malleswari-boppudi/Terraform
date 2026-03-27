@@ -5,3 +5,9 @@ resource "aws_instance" "name" {
       Name = "Dev-instance"
     }  
 }
+
+
+#terraform workspace new dev    ##new workspace dev is created
+#terraform workspace select default     #switch to default workspace 
+#terraform workspace list   # gives the list of workspaces 
+#not recommended in production 
